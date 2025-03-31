@@ -25,6 +25,7 @@ jobs:
         run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Deploy Project Artifacts to Vercel
+
         id: deploy
         run: |
           DEPLOYMENT_URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
@@ -36,3 +37,4 @@ jobs:
           PREVIEW_URL="preview-rms.vercel.app"
           vercel alias set $DEPLOYMENT_URL $PREVIEW_URL --token=${{ secrets.VERCEL_TOKEN }}
           echo "Preview Deployment URL: https://$PREVIEW_URL"
+
