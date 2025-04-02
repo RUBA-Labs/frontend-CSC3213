@@ -1,4 +1,5 @@
 import ThemeSwitch from './components/ThemeSwitch'
+
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center min-h-screen max-w-screen-lg mx-auto px-4">
