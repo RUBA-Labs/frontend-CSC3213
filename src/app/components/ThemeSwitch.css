@@ -1,0 +1,8 @@
+@import '../globals.css';
+
+@layer components {
+    .themeIcon  {
+      @apply text-2xl cursor-pointer transition-transform duration-200 hover:scale-150;
+    }
+}  
+
