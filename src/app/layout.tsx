@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Providers } from './providers'
-
-import "./globals.css";
+import { Providers } from '@/components/providers'
+import "../styles/globals.css";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Resource Management System",
@@ -18,7 +18,6 @@ export default function RootLayout({
       <body>
       <Providers>
         {children}
-          
       </Providers>
       </body>
     </html>
