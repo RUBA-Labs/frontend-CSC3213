@@ -1,0 +1,10 @@
+@import "../../../styles/globals.css";
+@layer components {
+    .formContainer {
+        @apply w-96 p-6 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-purple-950;
+    }
+
+    .formTitle {
+        @apply text-3xl font-bold text-white text-center;
+    }
+}
