@@ -22,7 +22,7 @@ export default function LoginForm() {
                         />
                     </div>
                     <p className="text-left text-white/80 mb-3">
-                        Forget password <Link href='../password-reset' className="text-white underline">Reset password</Link>
+                        Forget password <Link href='/password-reset' className="text-white underline">Reset password</Link>
                     </p>
                     <button
                         type="submit"
@@ -32,7 +32,7 @@ export default function LoginForm() {
                     </button>
                 </form>
                 <p className="text-center text-white/80 mt-3">
-                    Don&apos;t have an account? <Link href='../sign-up' className="text-white underline">Sign Up</Link>
+                    Don&apos;t have an account? <Link href='/sign-up' className="text-white underline">Sign Up</Link>
                 </p>
             </div>
 
