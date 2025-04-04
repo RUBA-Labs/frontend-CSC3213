@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Input from "./input";
-import Button from "./button";   
-import "./form.css"; 
+import Button from "./button";
+import "./form.css";
 
 export default function LoginForm() {
     return (
