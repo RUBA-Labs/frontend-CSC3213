@@ -1,21 +1,11 @@
-'use client'
-import LoginForm from '../components/loginForm'
+import LoginForm from '../components/loginForm';
+import Image from 'next/image';
 
-
-export default function login() {
-
-    const handleLogin = (userData: { email: string; password: string }) => {
-        console.log("User Email:", userData.email);
-        console.log("User Password:", userData.password);
-        // You can send this data to an API or process it further
-    };
-
+export default function Login() {
     return (
-        <div className="flex justify-evenly items-center min-h-screen bg-gradient-to-br from-fuchsia-950 to-purple-950">
-            <h1 className="text-4xl font-bold text-white mb-4">Welcome to Our App</h1>
-
-            <LoginForm onLogin={handleLogin}/>
+        <div className="flex justify-evenly items-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
+            <Image src='/7707558_3722303.svg' alt="/My SVG Icon" width={500} height={500} priority  style={{ transform: "scaleY(-1) rotate(180deg)"}}  />
+            <LoginForm />
         </div>
-    )
-
+    );
 }
