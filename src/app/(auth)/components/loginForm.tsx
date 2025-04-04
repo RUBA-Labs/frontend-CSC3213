@@ -32,7 +32,7 @@ export default function LoginForm() {
                     </button>
                 </form>
                 <p className="text-center text-white/80 mt-3">
-                    Don't have an account? <Link href='../sign-up' className="text-white underline">Sign Up</Link>
+                    Don&apos;t have an account? <Link href='../sign-up' className="text-white underline">Sign Up</Link>
                 </p>
             </div>
 
