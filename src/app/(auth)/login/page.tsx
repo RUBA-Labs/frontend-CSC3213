@@ -1,6 +1,7 @@
 import LoginForm from '../components/loginForm';
 import Image from 'next/image';
 
+
 export default function Login() {
     return (
         <div className="flex flex-col lg:flex-row justify-center items-center min-h-screen bg-gradient-to-r from-blue-600 to-purple-900 px-4">
@@ -23,6 +24,7 @@ export default function Login() {
                     style={{ transform: "scaleY(-1) rotate(180deg)" }}
                 />
             </div>
+            {/*<MyIcon className="w-full h-auto" />*/}
         </div>
     );
 }
