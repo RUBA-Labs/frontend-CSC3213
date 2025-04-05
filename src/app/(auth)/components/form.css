@@ -7,4 +7,10 @@
     .formTitle {
         @apply text-3xl font-bold text-white text-center;
     }
+
+    .formContainer:hover {
+        border-color: rgba(255, 255, 255, 0.6); /* Glowing border color */
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Glowing effect */
+    }
+
 }
