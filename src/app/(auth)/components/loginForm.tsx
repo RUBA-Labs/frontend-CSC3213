@@ -11,13 +11,13 @@ export default function LoginForm() {
             <form className="mt-4">
                 <Input label="Email" type="email" placeholder="Enter your email" icon={<FaEnvelope />}/>
                 <Input label="Password" type="password" placeholder="Enter your password" icon={<FaLock />}/>
-                <p className="text-left text-white/80 mb-3">
-                    Forget password <Link href='/password-reset' className="text-white underline">Reset password</Link>
+                <p className="text-left text-dark5 dark:text-dark3 mb-3">
+                    Forget password <Link href='/password-reset' className="text-dark5 dark:text-dark3 underline">Reset password</Link>
                 </p>
                 <Button type='submit' label="Login" />
             </form>
-            <p className="text-center text-white/80 mt-3">
-                Don&apos;t have an account? <Link href='/sign-up' className="text-white underline">Sign Up</Link>
+            <p className="text-center text-dark5 dark:text-dark3 mt-3">
+                Don&apos;t have an account? <Link href='/sign-up' className="text-dark5 dark:text-dark3 underline">Sign Up</Link>
             </p>
         </div>
 
