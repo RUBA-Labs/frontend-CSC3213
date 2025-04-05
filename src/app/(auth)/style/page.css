@@ -1,0 +1,17 @@
+@import "../../../styles/globals.css";
+
+@layer components {
+    .pagebackground {
+        @apply 
+        bg-gradient-to-br from-dark1 to-dark3
+        dark:bg-gradient-to-br dark:from-dark5 dark:to-dark5/5 px-4; 
+}
+.pageflexbox {
+       @apply 
+       flex flex-col
+       lg:flex-row justify-center
+       items-center
+       lg:gap-35
+       overflow-hidden
+    }
+}
