@@ -2,7 +2,7 @@
 
 @layer components {
     .themeIcon  {
-      @apply text-2xl cursor-pointer transition-transform duration-200 hover:scale-150;
+      @apply text-2xl cursor-pointer transition-transform duration-200 hover:scale-150 text-dark5 dark:text-dark3;
     }
 }
 

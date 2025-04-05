@@ -12,8 +12,9 @@ export default function Login() {
         lg:flex-row justify-center
         items-center
         min-h-screen
-        bg-gradient-to-br from-dark1/50 to-dark3
-        dark:bg-gradient-to-br dark:from-dark1 dark:to-dark5 px-4">
+        overflow-hidden
+        bg-gradient-to-br from-dark1 to-dark3
+        dark:bg-gradient-to-br dark:from-dark5 dark:to-dark5/50 px-4">
             {/* Form Section */}
             <div className="w-full lg:w-1/3 flex justify-center mb-2 sm:mb-1 lg:mb-0">
                 <div className="scale-75 sm:scale-90 md:scale-100 lg:scale-100"> {/* Scales down the form for mobile */}
@@ -23,7 +24,7 @@ export default function Login() {
 
             {/* Image Section */}
             <div className="w-full lg:w-1/2 flex justify-center lg:order-first">
-                <ThemeSwitch/>
+                <ThemeSwitch />
                 <Image
                     src={myImage}
                     alt="/My SVG Icon"
