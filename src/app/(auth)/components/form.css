@@ -1,0 +1,18 @@
+@import "../../../styles/globals.css";
+
+@layer components {
+    .formContainer {
+        @apply w-96 p-6 rounded-2xl bg-dark3/50 backdrop-blur-lg border-2 border-dark5/30 shadow-dark5 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-md hover:border-dark5/50
+         dark:bg-dark5/50 dark:backdrop-blur-lg border-2 dark:border-dark3/30 dark:shadow-dark3 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-md dark:hover:border-dark3/50;
+    }
+
+    .formTitle {
+        @apply text-3xl font-bold text-dark5 dark:text-dark3 text-center;
+    }
+
+    /* .formContainer:hover {
+        @apply border-dark1  shadow-dark5 ;   
+        
+    } */
+
+}
