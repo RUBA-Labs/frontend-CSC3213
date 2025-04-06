@@ -10,7 +10,7 @@ export default function Login() {
         <div className="pagebackground w-screen h-screen flex flex-col items-center lg:justify-center overflow-hidden">
             
             {/* Top - Theme Switcher */}
-            <div className="w-full flex justify-center pt-4 sm:pt-0">
+            <div className="absolute top-4 right-4">
                 <ThemeSwitch />
             </div>
 
