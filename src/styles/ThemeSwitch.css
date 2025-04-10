@@ -1,8 +1,8 @@
 @import "../styles/globals.css";
 
 @layer components {
-    .themeIcon  {
-      @apply text-2xl cursor-pointer transition-transform duration-200 hover:scale-150 text-dark5 dark:text-dark3;
-    }
+  .themeIcon {
+    @apply text-2xl cursor-pointer transition-transform duration-200 hover:scale-150 text-dark5 dark:text-dark3
+    top-4 right-4 absolute z-10;
+  }
 }
-
