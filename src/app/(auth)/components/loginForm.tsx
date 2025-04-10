@@ -2,7 +2,7 @@ import Link from "next/link";
 import Input from "./input";
 import Button from "./button";
 import { FaEnvelope, FaLock } from "react-icons/fa";
-import "./form.css";
+import "../style/form.css";
 
 export default function LoginForm() {
     return (

@@ -6,7 +6,7 @@ import { useTheme } from 'next-themes'
 import Image from "next/image"
 
 //styles
-import "./ThemeSwitch.css"
+import "../styles/ThemeSwitch.css"
 
 export default function ThemeSwitch() {
   const [mounted, setMounted] = useState(false)

@@ -1,16 +1,16 @@
-import LoginForm from '../components/loginForm';
-import ImageSlider from '../components/imageslider';
+import LoginForm from '../../components/loginForm';
+import ImageSlider from '../../components/imageslider';
 import ThemeSwitch from "@/components/ThemeSwitch";
 import Footer from "@/components/footer";
 import React from "react";
-import "../style/page.css";
+import "../../style/page.css";
 
 export default function Login() {
     return (
-        <div className="pagebackground w-screen h-screen flex flex-col items-center lg:justify-center overflow-hidden">
+        <div className="pagebackground ">
             
             {/* Top - Theme Switcher */}
-            <div className="absolute top-4 right-4">
+            <div className="themeSwitchContainer">
                 <ThemeSwitch />
             </div>
 
@@ -24,7 +24,7 @@ export default function Login() {
                 </div>
 
                 {/* Image Slider */}
-                <div className="w-1/2 flex justify-center lg:order-first">
+                <div className="imageSliderContainer">
                     <ImageSlider />
                 </div>
             </div>
