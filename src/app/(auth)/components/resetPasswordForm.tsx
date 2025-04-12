@@ -1,21 +1,14 @@
 import Link from "next/link";
 import Input from "./input";
 import Button from "./button";
-import { FaEnvelope, FaLock, FaUser } from "react-icons/fa";
+import { FaEnvelope, FaLock } from "react-icons/fa";
 import "../style/form.css";
 
-export default function SignUpForm() {
+export default function ResetPasswordForm() {
     return (
         <div className="formContainer">
-            <h2 className="formTitle">Create an Account</h2>
+            <h2 className="formTitle">Reset Your Password</h2>
             <form className="mt-4 space-y-4">
-                {/* Full Name Input */}
-                <Input
-                    label="Full Name"
-                    type="text"
-                    placeholder="Enter your full name"
-                    icon={<FaUser />}
-                />
                 {/* Email Input */}
                 <Input
                     label="Email"
@@ -23,26 +16,26 @@ export default function SignUpForm() {
                     placeholder="Enter your email"
                     icon={<FaEnvelope />}
                 />
-                {/* Password Input */}
+                {/* New Password Input */}
                 <Input
-                    label="Password"
+                    label="New Password"
                     type="password"
-                    placeholder="Enter your password"
+                    placeholder="Enter your new password"
                     icon={<FaLock />}
                 />
-                {/* Confirm Password Input */}
+                {/* Confirm New Password Input */}
                 <Input
-                    label="Confirm Password"
+                    label="Confirm New Password"
                     type="password"
-                    placeholder="Re-enter your password"
+                    placeholder="Re-enter your new password"
                     icon={<FaLock />}
                 />
                 {/* Submit Button */}
-                <Button type="submit" label="Sign Up" />
+                <Button type="submit" label="Reset Password" />
             </form>
             {/* Link to Login */}
             <p className="text-center text-sm mt-4">
-                Already have an account?{" "}
+                Remembered your password?{" "}
                 <Link href="/login" className="text-primary hover:underline">
                     Log In
                 </Link>
