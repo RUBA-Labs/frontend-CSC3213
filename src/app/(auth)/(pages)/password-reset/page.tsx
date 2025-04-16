@@ -18,7 +18,7 @@ export default function SignUp() {
             <div className="pageflexbox ">
                 {/* Login Form */}
                 <div className="w-1/2 flex justify-center">
-                    <div className="scale-90 lg:scale-100">
+                    <div className="scale-75 sm:scale-90 lg:scale-95">
                         <ResetPasswordForm />
                     </div>
                 </div>
