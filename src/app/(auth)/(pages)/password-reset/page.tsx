@@ -1,12 +1,36 @@
-export default function password_reset(){
+import ResetPasswordForm from '../../components/resetPasswordForm';
+import ImageSlider from '../../components/imageslider';
+import ThemeSwitch from "@/components/ThemeSwitch";
+import Footer from "@/components/footer";
+import React from "react";
+import "../../style/page.css";
+
+export default function SignUp() {
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600">
-        <div className="w-96 p-6 rounded-2xl bg-white/30 backdrop-blur-lg border border-white/20 shadow-lg">
-          <h2 className="text-xl font-bold text-white">Glassmorphism UI</h2>
-          <p className="text-white/80 mt-2">
-            This is a card with a glass effect using Tailwind CSS.
-          </p>
+        <div className="pagebackground ">
+            
+            {/* Top - Theme Switcher */}
+            <div className="themeSwitchContainer">
+                <ThemeSwitch />
+            </div>
+
+            {/* Middle - Main Content */}
+            <div className="pageflexbox ">
+                {/* Login Form */}
+                <div className="w-1/2 flex justify-center">
+                    <div className="scale-75 sm:scale-90 lg:scale-95">
+                        <ResetPasswordForm />
+                    </div>
+                </div>
+
+                {/* Image Slider */}
+                <div className="imageSliderContainer">
+                    <ImageSlider />
+                </div>
+            </div>
+
+            {/* Bottom - Footer */}
+            <Footer/>
         </div>
-      </div>
-    )
+    );
 }
