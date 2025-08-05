@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Input from "./input";
 import Button from "./button";
-import { FaEnvelope, FaLock, FaUser } from "react-icons/fa";
+import { FaLock } from "react-icons/fa";
 import "../style/form.css";
 
 
@@ -22,7 +22,7 @@ export default function EmailCodeForm() {
             </form>
             {/* Link to Resend Code */}
             <p className="text-center text-sm mt-4">
-                Didn't receive the code?{" "}
+                Didn&#39;t receive the code?{" "}
                 <Link href="/resend-code" className="text-primary hover:underline">
                     Resend Code
                 </Link>
