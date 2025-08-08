@@ -8,9 +8,11 @@ interface InputProps {
     type: string;
     placeholder: string;
     icon?: ReactNode;
+    value: string;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export default function Input({ label, type, placeholder, icon }: InputProps) {
+export default function Input({ label, type, placeholder, icon, value, onChange }: InputProps) {
     const [showPassword, setShowPassword] = useState(false);
 
     const togglePasswordVisibility = () => {
@@ -30,6 +32,8 @@ export default function Input({ label, type, placeholder, icon }: InputProps) {
           type={type === "password" && showPassword ? "text" : type}
           placeholder={placeholder}
           className="w-full px-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-dark5 dark:focus:ring-dark3"
+          value={value}
+          onChange={onChange}
         />
         {type === "password" && (
           <button
