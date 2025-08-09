@@ -1,11 +1,14 @@
+"use client";
 import Link from "next/link";
 import Input from "./input";
 import Button from "./button";
 import { FaLock } from "react-icons/fa";
 import "../style/form.css";
+import { useState } from "react";
 
 
 export default function EmailCodeForm() {
+    const [code, setCode] = useState("");
     return (
         <div className="formContainer">
             <h2 className="formTitle">Verify Your Email</h2>
@@ -16,6 +19,8 @@ export default function EmailCodeForm() {
                     type="text"
                     placeholder="Enter the code sent to your email"
                     icon={<FaLock />}
+                    value={code}
+                    onChange={(e) => setCode(e.target.value)}
                 />
                 {/* Submit Button */}
                 <Button type="submit" label="Verify" />
