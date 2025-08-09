@@ -1,14 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_API_URL;
-
-if (!API_BASE_URL) {
-  console.error("NEXT_PUBLIC_BACKEND_API_URL is not defined. Please set it in your .env.local file.");
-  // You might want to throw an error or handle this more gracefully in a production app
-}
-
 const api = axios.create({
-  baseURL: API_BASE_URL,
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
   headers: {
     'Content-Type': 'application/json',
   },
