@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AuthProvider } from '@/context/AuthContext';
 import { Providers } from '@/components/providers'
 import "../styles/globals.css";
 import React from "react";
@@ -16,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-      <Providers>
-        {children}
-      </Providers>
+            <AuthProvider>
+        <Providers>
+          {children}
+        </Providers>
+      </AuthProvider>
       </body>
     </html>
   );

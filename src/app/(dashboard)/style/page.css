@@ -1,0 +1,30 @@
+@import "../../../styles/globals.css";
+
+@layer components {
+    .pagebackground {
+        @apply 
+        bg-gradient-to-br from-dark1 to-dark3
+        dark:bg-gradient-to-br dark:from-dark5 dark:to-dark5/5 px-4
+        w-screen h-screen flex flex-col items-center lg:justify-center overflow-hidden;
+}
+.pageflexbox {
+       @apply 
+       flex flex-col
+       lg:flex-row justify-center
+       items-center
+       lg:gap-35
+       overflow-hidden
+    }
+
+    .themeSwitchContainer {
+        @apply
+        md:absolute md:top-4 md:right-4
+        mt-4 mb-0.5;
+
+    }
+
+    .imageSliderContainer {
+        @apply
+        w-1/2 flex justify-center lg:order-first ;
+    }
+}
