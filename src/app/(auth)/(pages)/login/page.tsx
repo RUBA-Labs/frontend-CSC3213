@@ -8,7 +8,7 @@ import "../../style/page.css";
 export default function Login() {
     return (
         <div className="pagebackground ">
-            
+
             {/* Top - Theme Switcher */}
             <div className="themeSwitchContainer">
                 <ThemeSwitch />
@@ -30,7 +30,7 @@ export default function Login() {
             </div>
 
             {/* Bottom - Footer */}
-            <Footer/>
+            <Footer />
         </div>
     );
 }
