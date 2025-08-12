@@ -14,7 +14,7 @@ export default function StudentDashboardPage() {
     { id: "courses", label: "My Courses", icon: <FaBook /> },
     { id: "timetable", label: "Timetable", icon: <FaCalendarAlt /> },
     { id: "assignments", label: "Assignments", icon: <FaClipboardList /> },
-    { id: "profile", label: "Profile", icon: <FaUserGraduate /> },
+    { id: "Calendar", label: "Calendar", icon: <FaUserGraduate /> },
   ];
 
   // Student-specific content
