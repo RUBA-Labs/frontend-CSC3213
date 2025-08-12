@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export type MenuItem = {
   id: string;
@@ -33,7 +34,7 @@ export default function Sidebar({ menuItems, onMenuSelect, selectedMenu }: Sideb
         className="mr-2 md:mr-0 mb-0 md:mb-4 p-1 rounded bg-dark3/20 dark:bg-dark3/30 hover:bg-dark3/40 dark:hover:bg-dark3/50 transition"
         title={isSidebarOpen ? "Collapse sidebar" : "Expand sidebar"}
       >
-        {isSidebarOpen ? "<" : ">"}
+        {isSidebarOpen ? <FaChevronLeft /> : <FaChevronRight />}
       </button>
 
       {/* Dynamic Menu */}
