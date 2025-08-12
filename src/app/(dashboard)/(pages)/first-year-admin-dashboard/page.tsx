@@ -2,7 +2,7 @@
 import Footer from "@/components/footer";
 import React from "react";
 import "../../style/page.css";
-import FirstYearAdminDashboard from "../../components/firstYearAdminDashboard";
+
 
 export default function FirstYearAdminPage() {
     return (
@@ -11,7 +11,7 @@ export default function FirstYearAdminPage() {
             <div className="pageflexbox flex flex-1 justify-center items-start">
                 <div className="w-full flex justify-center">
                     <div className="scale-90 sm:scale-95 lg:scale-100 w-full">
-                        <FirstYearAdminDashboard />
+                        
                     </div>
                 </div>
             </div>
