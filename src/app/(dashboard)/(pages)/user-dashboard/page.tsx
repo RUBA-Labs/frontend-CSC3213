@@ -3,7 +3,7 @@ import PrivateRoute from "@/components/PrivateRoute";
 import Footer from "@/components/footer";
 import React from "react";
 import "../../style/page.css";
-import UserDashboard from "../../components/userDashboard";
+
 
 export default function UserDashboardPage() {
     return (
@@ -13,7 +13,7 @@ export default function UserDashboardPage() {
                 <div className="pageflexbox flex flex-1 justify-center items-start">
                     <div className="w-full flex justify-center">
                         <div className="scale-90 sm:scale-95 lg:scale-100 w-full">
-                            <UserDashboard />
+                         
                         </div>
                     </div>
                 </div>
