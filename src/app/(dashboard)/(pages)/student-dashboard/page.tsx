@@ -4,7 +4,7 @@ import "../../style/page.css";
 import Header from "../../components/header";
 import Sidebar, { MenuItem } from "../../components/sidebar";
 import { useState } from "react";
-import { FaBook, FaCalendarAlt, FaClipboardList, FaUserGraduate, FaChartLine, FaBell, FaGraduationCap } from "react-icons/fa";
+import { FaBook, FaCalendarAlt, FaClipboardList, FaUserGraduate, FaChartLine, FaBell } from "react-icons/fa";
 
 export default function StudentDashboardPage() {
   const [selectedMenu, setSelectedMenu] = useState("courses");
