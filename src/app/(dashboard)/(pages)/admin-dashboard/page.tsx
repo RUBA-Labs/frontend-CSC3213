@@ -6,7 +6,7 @@ import AdminSidebar from "../../components/adminSidebar";
 import { useState } from "react";
 
 export default function AdminDashboardPage() {
-  const [selectedMenu, setSelectedMenu] = useState("overview");
+  const [selectedMenu, setSelectedMenu] = useState<"overview" | "users" | "analytics" | "settings">("overview");
 
   let content;
   if (selectedMenu === "overview") {
@@ -51,7 +51,7 @@ export default function AdminDashboardPage() {
       <div className="flex flex-1 flex-col md:flex-row w-full">
         {/* Left Sidebar with fold/unfold */}
         <AdminSidebar
-          onMenuSelect={(menu: string) => setSelectedMenu(menu)}
+          onMenuSelect={(menu) => setSelectedMenu(menu)}
           selectedMenu={selectedMenu}
         />
         {/* Right Main Content */}

@@ -2,7 +2,9 @@
 import { useState } from "react";
 import { FaChartBar, FaChevronLeft, FaChevronRight, FaCog, FaTachometerAlt, FaUsers } from "react-icons/fa";
 
-export default function AdminSidebar({ onMenuSelect, selectedMenu }) {
+
+
+export default function AdminSidebar({ onMenuSelect, selectedMenu }: { onMenuSelect: (menu: "overview" | "users" | "analytics" | "settings") => void; selectedMenu: "overview" | "users" | "analytics" | "settings" }) {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     return (
