@@ -4,7 +4,7 @@ import { FaChartBar, FaChevronLeft, FaChevronRight, FaCog, FaTachometerAlt, FaUs
 
 
 
-export default function AdminSidebar({ onMenuSelect, selectedMenu }: { onMenuSelect: (menu: "overview" | "users" | "analytics" | "settings") => void; selectedMenu: "overview" | "users" | "analytics" | "settings" }) {
+export default function Sidebar({ onMenuSelect, selectedMenu }: { onMenuSelect: (menu: "overview" | "users" | "analytics" | "settings") => void; selectedMenu: "overview" | "users" | "analytics" | "settings" }) {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     return (

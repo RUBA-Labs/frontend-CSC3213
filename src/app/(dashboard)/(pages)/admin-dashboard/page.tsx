@@ -2,7 +2,7 @@
 import Footer from "@/components/footer";
 import "../../style/page.css";
 import Header from "../../components/header";
-import AdminSidebar from "../../components/adminSidebar";
+import Sidebar from "../../components/sidebar";
 import { useState } from "react";
 
 export default function AdminDashboardPage() {
@@ -50,7 +50,7 @@ export default function AdminDashboardPage() {
       {/* Middle - Main Content */}
       <div className="flex flex-1 flex-col md:flex-row w-full">
         {/* Left Sidebar with fold/unfold */}
-        <AdminSidebar
+        <Sidebar
           onMenuSelect={(menu) => setSelectedMenu(menu)}
           selectedMenu={selectedMenu}
         />
