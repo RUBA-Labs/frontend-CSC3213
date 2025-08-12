@@ -1,3 +1,4 @@
 {
-    "workbench.sash.size": 3
+    "workbench.sash.size": 3,
+    "editor.wordWrap": "on"
 }
