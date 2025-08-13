@@ -1,5 +1,6 @@
 "use client";
 import Footer from "@/components/footer";
+import PrivateRoute from "@/components/PrivateRoute";
 import "../../style/page.css";
 import Header from "../../components/header";
 import Sidebar, { MenuItem } from "../../components/sidebar";
@@ -262,23 +263,25 @@ export default function AdminDashboardPage() {
   }
 
   return (
-    <div className="pagebackground min-h-screen flex flex-col">
+    <PrivateRoute>
+        <div className="pagebackground min-h-screen flex flex-col">
 
-      <Header />
+        <Header />
 
-      <div className="flex flex-1 flex-col md:flex-row w-full pt-20">
-        <Sidebar
-          menuItems={menuItems}
-          onMenuSelect={setSelectedMenu}
-          selectedMenu={selectedMenu}
-        />
-        <div className="flex-1 flex justify-center items-start p-4 mt-4">
-          <div className="w-full bg-white/40 dark:bg-dark3/30 rounded-xl p-4 shadow-lg overflow-y-auto max-h-[calc(100vh-120px)]">
-            {content}
-          </div>
+        <div className="flex flex-1 flex-col md:flex-row w-full pt-20">
+            <Sidebar
+            menuItems={menuItems}
+            onMenuSelect={setSelectedMenu}
+            selectedMenu={selectedMenu}
+            />
+            <div className="flex-1 flex justify-center items-start p-4 mt-4">
+            <div className="w-full bg-white/40 dark:bg-dark3/30 rounded-xl p-4 shadow-lg overflow-y-auto max-h-[calc(100vh-120px)]">
+                {content}
+            </div>
+            </div>
         </div>
-      </div>
-      <Footer />
-    </div>
+        <Footer />
+        </div>
+    </PrivateRoute>
   );
 }
