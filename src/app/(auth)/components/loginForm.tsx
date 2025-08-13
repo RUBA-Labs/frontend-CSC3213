@@ -21,7 +21,7 @@ export default function LoginForm() {
       const response = await login(email, password);
       console.log("Login successful:", response);
       authLogin(response.access_token, response.user);
-      router.push("/user-dashboard");
+      router.push("/admin-dashboard");
     } catch (error) {
       console.error("Login failed:", error);
       // Handle login error (e.g., display error message to user)
