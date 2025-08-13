@@ -15,7 +15,7 @@ export default function Header() {
     };
 
     return (
-        <header className="w-full flex items-center justify-between px-6 py-3 bg-white/60 dark:bg-dark1/60 backdrop-blur-md shadow-md rounded-b-xl mb-4">
+        <header className="fixed top-0 left-0 right-0 z-50 w-full flex items-center justify-between px-6 py-3 bg-white/60 dark:bg-dark1/60 backdrop-blur-md shadow-md rounded-b-xl mb-4">
             {/* Left: UOP Logo and Title */}
             <div className="flex items-center gap-3">
                 <Image
@@ -36,7 +36,7 @@ export default function Header() {
                     type="button"
                     label="Logout"
                     onClick={handleLogout}
-                    className="px-4 py-2 bg-dark5 hover:bg-dark1 text-white font-semibold rounded-lg shadow-sm transition-all duration-200"
+                    
                 />
                 <ThemeSwitch/>
             </div>
