@@ -1,5 +1,6 @@
 "use client";
 import Footer from "@/components/footer";
+import PrivateRoute from "@/components/PrivateRoute";
 import "../../style/page.css";
 import Header from "../../components/header";
 import Sidebar, { MenuItem } from "../../components/sidebar";
@@ -45,7 +46,11 @@ export default function StudentDashboardPage() {
             </div>
           </div>
           <div className="bg-yellow-100 dark:bg-yellow-900/50 p-6 rounded-xl shadow">
+<<<<<<< HEAD
             <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200">English</h3>
+=======
+            <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-200">English Literature</h3>
+>>>>>>> main_demo
             <p className="text-sm text-yellow-600 dark:text-yellow-300 mt-1">Dr. Emily Roberts</p>
             <p className="text-sm text-yellow-600 dark:text-yellow-300 mt-1">Semester 1</p>
             <div className="mt-4 flex gap-2">
@@ -63,7 +68,11 @@ export default function StudentDashboardPage() {
             </div>
           </div>
           <div className="bg-red-100 dark:bg-red-900/50 p-6 rounded-xl shadow">
+<<<<<<< HEAD
             <h3 className="text-lg font-semibold text-red-800 dark:text-red-200">Statistics</h3>
+=======
+            <h3 className="text-lg font-semibold text-red-800 dark:text-red-200">History</h3>
+>>>>>>> main_demo
             <p className="text-sm text-red-600 dark:text-red-300 mt-1">Dr. James Miller</p>
             <p className="text-sm text-red-600 dark:text-red-300 mt-1">Semester 2</p>
             <div className="mt-4 flex gap-2">
@@ -144,7 +153,11 @@ export default function StudentDashboardPage() {
                 </td>
                 <td className="py-3 px-4">
                   <div className="bg-yellow-100 dark:bg-yellow-900/50 p-3 rounded-lg">
+<<<<<<< HEAD
                     <div className="font-semibold">English</div>
+=======
+                    <div className="font-semibold">English Lit</div>
+>>>>>>> main_demo
                     <div className="text-sm">Room 102</div>
                   </div>
                 </td>
@@ -156,7 +169,11 @@ export default function StudentDashboardPage() {
                 </td>
                 <td className="py-3 px-4">
                   <div className="bg-red-100 dark:bg-red-900/50 p-3 rounded-lg">
+<<<<<<< HEAD
                     <div className="font-semibold">Statistics</div>
+=======
+                    <div className="font-semibold">History</div>
+>>>>>>> main_demo
                     <div className="text-sm">Room 301</div>
                   </div>
                 </td>
@@ -171,7 +188,11 @@ export default function StudentDashboardPage() {
                 </td>
                 <td className="py-3 px-4">
                   <div className="bg-yellow-100 dark:bg-yellow-900/50 p-3 rounded-lg">
+<<<<<<< HEAD
                     <div className="font-semibold">English</div>
+=======
+                    <div className="font-semibold">English Lit</div>
+>>>>>>> main_demo
                     <div className="text-sm">Room 102</div>
                   </div>
                 </td>
@@ -183,7 +204,11 @@ export default function StudentDashboardPage() {
                 </td>
                 <td className="py-3 px-4">
                   <div className="bg-red-100 dark:bg-red-900/50 p-3 rounded-lg">
+<<<<<<< HEAD
                     <div className="font-semibold">Statistics</div>
+=======
+                    <div className="font-semibold">History</div>
+>>>>>>> main_demo
                     <div className="text-sm">Room 301</div>
                   </div>
                 </td>
@@ -216,7 +241,11 @@ export default function StudentDashboardPage() {
                 </td>
                 <td className="py-3 px-4">
                   <div className="bg-yellow-100 dark:bg-yellow-900/50 p-3 rounded-lg">
+<<<<<<< HEAD
                     <div className="font-semibold">English</div>
+=======
+                    <div className="font-semibold">English Lit</div>
+>>>>>>> main_demo
                     <div className="text-sm">Room 102</div>
                   </div>
                 </td>
@@ -290,7 +319,11 @@ export default function StudentDashboardPage() {
               </tr>
               <tr className="border-b border-gray-200 dark:border-dark3/30">
                 <td className="py-3 px-4">Literary Analysis Essay</td>
+<<<<<<< HEAD
                 <td className="py-3 px-4">English</td>
+=======
+                <td className="py-3 px-4">English Literature</td>
+>>>>>>> main_demo
                 <td className="py-3 px-4">2025-08-25 23:59</td>
                 <td className="py-3 px-4">
                   <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Pending</span>
@@ -369,7 +402,7 @@ export default function StudentDashboardPage() {
                 <label className="block text-gray-700 dark:text-gray-300 mb-2">Phone</label>
                 <input
                   type="tel"
-                  defaultValue="+94 71 234 5678"
+                  defaultValue="+1 (555) 123-4567"
                   className="w-full p-2 border border-gray-300 dark:border-dark3 rounded bg-white dark:bg-dark3/20"
                 />
               </div>
@@ -438,7 +471,7 @@ export default function StudentDashboardPage() {
                 <span className="font-bold">B+</span>
               </div>
               <div className="flex justify-between items-center pb-2 border-b border-gray-200 dark:border-dark3/30">
-                <span>English</span>
+                <span>English Literature</span>
                 <span className="font-bold">A</span>
               </div>
               <div className="flex justify-between items-center pb-2 border-b border-gray-200 dark:border-dark3/30">
@@ -446,7 +479,7 @@ export default function StudentDashboardPage() {
                 <span className="font-bold">A</span>
               </div>
               <div className="flex justify-between items-center">
-                <span>Statistics</span>
+                <span>History</span>
                 <span className="font-bold">B</span>
               </div>
             </div>
@@ -514,6 +547,7 @@ export default function StudentDashboardPage() {
   }
 
   return (
+<<<<<<< HEAD
     <div className="pagebackground min-h-screen flex flex-col">
       <Header />
       <div className="flex flex-1 flex-col md:flex-row w-full pt-20">
@@ -525,10 +559,25 @@ export default function StudentDashboardPage() {
         <div className="flex-1 flex justify-center items-start p-4 mt-4">
           <div className="w-full bg-white/40 dark:bg-dark3/30 rounded-xl p-4 shadow-lg overflow-y-auto max-h-[calc(100vh-120px)]">
             {content}
+=======
+    <PrivateRoute>
+      <div className="pagebackground min-h-screen flex flex-col">
+        <Header />
+        <div className="flex flex-1 flex-col md:flex-row w-full pt-20">
+          <Sidebar
+            menuItems={menuItems}
+            onMenuSelect={setSelectedMenu}
+            selectedMenu={selectedMenu}
+          />
+          <div className="flex-1 flex justify-center items-start p-4 mt-4">
+            <div className="w-full bg-white/40 dark:bg-dark3/30 rounded-xl p-4 shadow-lg overflow-y-auto max-h-[calc(100vh-120px)]">
+              {content}
+            </div>
+>>>>>>> main_demo
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </PrivateRoute>
   );
 }
